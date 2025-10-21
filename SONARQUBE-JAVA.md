@@ -89,4 +89,57 @@
 
 ------
 
-> Co
+> Configure New Password
+
+![](Screenshot%202025-10-21%20155605.png)
+
+-----
+
+> Now to generate token go to **Administration**
+
+![](Screenshot%202025-10-21%20155711.png)
+
+----
+
+> To generate token select **Security → Users**
+
+![](Screenshot%202025-10-21%20155728.png)
+
+-----
+
+> Select the three dots to update token
+
+![](Screenshot%202025-10-21%20155741.png)
+
+----
+
+> Give a name and generate token (copy the token and store in notepad)
+
+![](Screenshot%202025-10-21%20155816.png)
+
+-------
+
+> Now to test with SonarQube use the command:  
+> ```bash
+> mvn clean verify sonar:sonar -Dsonar.host.url=http://13.221.134.199:9000 -Dsonar.login=squ_f07f413acf99fff40f16d40e801a02bfa605dc9b
+> ```
+
+![](Screenshot%202025-10-21%20163534.png)
+
+------
+
+> Build success and now go to SonarQube website
+
+![](Screenshot%202025-10-21%20163618.png)
+
+-----
+
+> Go to dashboard, we can view our Java application name, click on that
+
+![](Screenshot%202025-10-21%20163641.png)
+
+----
+
+> Test is successful and we can view detailed bugs in **Issues**
+
+![](Screenshot%202025-10-21%20163702.png)
